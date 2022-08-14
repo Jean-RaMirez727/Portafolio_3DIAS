@@ -1,0 +1,262 @@
+html {
+    box-sizing: border-box; /* esta linea es para darle flexbox a todos nuestros elementos y no sea dimensiones respecto al contenido sino a una medida*/
+    font-size: 62.5%; /* esta linea es para convertir 1REM = 10PX */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+} /* Esto es para darle box sizing a todo el contenido */
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    display: block;
+} /* Usa todo el tamaño maximo que permite box sizing o grid para su bloque y le da display block para poder ser editables por bloques*/
+
+body {
+    font-size: 1.6rem; /*Letras de tamaño por defecto 16 pixeles*/
+    line-height: 2; /*Interlineado recomendado*/
+    font-family: 'Inter', sans-serif; 
+    background-color: #1f1d2b;
+}
+/* UTILIDADES */
+.font-color {
+    color: #fff;
+}
+.font-size {
+    font-size: 5rem;
+}
+.max-width {
+    max-width: 90%;
+}
+.centrar-content {
+    margin: 0 auto;
+}
+.margin-text {
+    margin: 2rem 0;
+}
+.color-gray {
+    color: gray;
+}
+/*Bloque de Nombre*/ /*NAVEGACION PRICIPAL*/
+.container-html {
+    width: 120rem;
+    margin: 0 auto;
+}
+.nav-principal {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+.nav-principal a {
+    text-decoration: none;
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+    flex-basis: 10%;
+    
+}
+.nav-principal a:hover {
+    background-color: #f2a700;
+    color:#fff;
+    transition: ease-in-out .45s
+}
+.nav-principal .home {
+    color: #f2a700;
+}
+/* TIULO */ /* INFORMACION TITULO */
+.contenedor-main {
+    height: 80rem;
+}
+.nombre {
+    font-size: 15rem;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+    line-height: 1;
+}
+.container-informacion .nombre {
+    font-size: 15rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+.container-informacion p {
+    font-size: 5rem;
+    color: #fff;
+}
+.container-informacion span {
+    color: #f2a700;
+}
+.container-informacion {
+    line-height: 1.5;
+    display: inline-block;
+    width: 60%;
+}
+/* BACKGROUNDS */
+.background-dark {
+    background-image: url(/recursos/Rectangle\ 33-1.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    box-sizing: border-box;
+    background-size: 50%;
+    
+}
+.background-photo {
+    background-image: url(/recursos/DSC_0037.png);
+    background-repeat: no-repeat;
+    background-position: 80% 10%;
+    background-size: 40%;
+}
+
+
+.contenedor-vectores img {
+    display: inline-block;
+    width: 5rem;
+    margin-top: 3rem;
+    margin-right: 2rem;
+}
+
+
+/*2 BLOQUE */
+.contenedor-acerca {
+    background-color: #242635;
+    color: #fff;
+    text-align: center;
+}
+.contenedor-acerca h2 {
+    text-align: center;
+    padding: 2rem 0;
+}
+.contenedor-acerca p {
+    padding-bottom: 3rem;
+}
+.informacion-acerca {
+    width: 60%;
+}
+.imagenes-acerca {
+    display: flex;
+    justify-content: space-around;
+}
+/* SECCION EXPERIENCIA */
+.contenedor-exp {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 50rem;
+    width: 60%;
+    align-items: center;
+}
+.contenedor-exp .group:nth-child(10) {
+    grid-column: 4/5;
+    grid-row: 1/5;
+}
+
+.contenedor-exp div {
+    margin: 0 auto;
+}
+.group img{
+    height: 45rem;
+}
+.contenedor-exp .text-exp {
+    margin-left: 2rem;
+    text-align: left;
+}
+.exp h2 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 5rem;
+}
+/*MIS HABILIDADES*/
+.habilidades {
+    color: #fff;
+    height: 60rem;
+    width: 120rem;
+    margin: 0 auto;
+}
+.habilidades h2 {
+    font-size: 5rem;
+    text-align: center;
+}
+.text-habilidades {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 4rem;
+    align-items: center;
+}
+.porcentaje {
+    color: #f2a700;
+    font-weight: 800;
+    text-align: right;
+    font-size: 5rem;
+}
+/*MI PORTAFOLIO*/
+.portafolio {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+}
+/*CONTACTO*/
+.contacto {
+    height: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contacto div img {
+    width: 7rem;
+    margin: 0 auto;
+}
+.contacto div p, .titulo-contacto {
+    text-align: center;
+}
+.recurso {
+    display: flex;
+    flex-direction: column;
+}
+.recurso:nth-child(1) {
+    justify-content: flex-start;
+}
+.recurso:nth-child(2) {
+    justify-content: flex-end;
+}
+.titulo-contacto {
+    padding: 3rem 0;
+    font-size: 4rem;
+}
+.contenedor-portafolio h2 {
+    text-align: center;
+    font-size: 5rem;
+}
+/*FINAL*/
+.amor {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*HABILIDADES*/
+.portafolio {
+    max-width: 110rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+.portafolio .appcover {
+    flex-basis: 50%;
+}
+.appcover:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    align-items: flex-end;
+}
+.appcover img {
+    background-color: aqua;
+    background-size: cover;
+}
+.appcover p {
+    text-align: center;
+    color: #fff;
+}
